@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TX 2020</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <script>
+          var electionDate = new Date("Nov 3, 2020 00:00:00").getTime();
+
+          var interval = setInterval(function() {
+            var now = new Date().getTime();
+
+            var timeBetween = electionDate - now;
+
+            var days = Math.floor(timeBetween / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeBetween % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeBetween % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeBetween % (1000 * 60)) / 1000);
+
+            document.getElementById("election-clock").innerHTML = days + " d " + hours + " h " + minutes + " m " + seconds + " s until election day.";
+
+            if (timeBetween < 0) {
+              document.getElementById("election-clock").innerHTML = "";
+            }
+          }, 1000);
+        </script>
+
+  </head>
+  <nav id="top" class="navbar navbar-expand-lg navbar-dark">
+
+    <p id="election-clock">
+    </p>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Candidates
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a href="/federal"><button class="dropdown-item" type="button">Federal</button></a>
+              <a href="/statewide"><button class="dropdown-item" type="button">State</button></a>
+              <a href="/county"><button class="dropdown-item" type="button">County</button></a>
+              <a href="/district"><button class="dropdown-item" type="button">District</button></a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/links">Helpful Links</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/news">In The News</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

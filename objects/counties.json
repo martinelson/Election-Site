@@ -1,0 +1,761 @@
+[
+        {
+            "County": "ANDERSON"
+        },
+        {
+            "County": "ANDREWS"
+        },
+        {
+            "County": "ANGELINA"
+        },
+        {
+            "County": "ARANSAS"
+        },
+        {
+            "County": "ARCHER"
+        },
+        {
+            "County": "ARMSTRONG"
+        },
+        {
+            "County": "ATASCOSA"
+        },
+        {
+            "County": "AUSTIN"
+        },
+        {
+            "County": "BAILEY"
+        },
+        {
+            "County": "BANDERA"
+        },
+        {
+            "County": "BASTROP"
+        },
+        {
+            "County": "BAYLOR"
+        },
+        {
+            "County": "BEE"
+        },
+        {
+            "County": "BELL"
+        },
+        {
+            "County": "BEXAR"
+        },
+        {
+            "County": "BLANCO"
+        },
+        {
+            "County": "BORDEN"
+        },
+        {
+            "County": "BOSQUE"
+        },
+        {
+            "County": "BOWIE"
+        },
+        {
+            "County": "BRAZORIA"
+        },
+        {
+            "County": "BRAZOS"
+        },
+        {
+            "County": "BREWSTER"
+        },
+        {
+            "County": "BRISCOE"
+        },
+        {
+            "County": "BROOKS"
+        },
+        {
+            "County": "BROWN"
+        },
+        {
+            "County": "BURLESON"
+        },
+        {
+            "County": "BURNET"
+        },
+        {
+            "County": "CALDWELL"
+        },
+        {
+            "County": "CALHOUN"
+        },
+        {
+            "County": "CALLAHAN"
+        },
+        {
+            "County": "CAMERON"
+        },
+        {
+            "County": "CAMP"
+        },
+        {
+            "County": "CARSON"
+        },
+        {
+            "County": "CASS"
+        },
+        {
+            "County": "CASTRO"
+        },
+        {
+            "County": "CHAMBERS"
+        },
+        {
+            "County": "CHEROKEE"
+        },
+        {
+            "County": "CHILDRESS"
+        },
+        {
+            "County": "CLAY"
+        },
+        {
+            "County": "COCHRAN"
+        },
+        {
+            "County": "COKE"
+        },
+        {
+            "County": "COLEMAN"
+        },
+        {
+            "County": "COLLIN"
+        },
+        {
+            "County": "COLLINGSWORTH"
+        },
+        {
+            "County": "COLORADO"
+        },
+        {
+            "County": "COMAL"
+        },
+        {
+            "County": "COMANCHE"
+        },
+        {
+            "County": "CONCHO"
+        },
+        {
+            "County": "COOKE"
+        },
+        {
+            "County": "CORYELL"
+        },
+        {
+            "County": "COTTLE"
+        },
+        {
+            "County": "CRANE"
+        },
+        {
+            "County": "CROCKETT"
+        },
+        {
+            "County": "CROSBY"
+        },
+        {
+            "County": "CULBERSON"
+        },
+        {
+            "County": "DALLAM"
+        },
+        {
+            "County": "DALLAS"
+        },
+        {
+            "County": "DAWSON"
+        },
+        {
+            "County": "DEAF SMITH"
+        },
+        {
+            "County": "DELTA"
+        },
+        {
+            "County": "DENTON"
+        },
+        {
+            "County": "DEWITT"
+        },
+        {
+            "County": "DICKENS"
+        },
+        {
+            "County": "DIMMIT"
+        },
+        {
+            "County": "DONLEY"
+        },
+        {
+            "County": "DUVAL"
+        },
+        {
+            "County": "EASTLAND"
+        },
+        {
+            "County": "ECTOR"
+        },
+        {
+            "County": "EDWARDS"
+        },
+        {
+            "County": "ELLIS"
+        },
+        {
+            "County": "EL PASO"
+        },
+        {
+            "County": "ERATH"
+        },
+        {
+            "County": "FALLS"
+        },
+        {
+            "County": "FANNIN"
+        },
+        {
+            "County": "FAYETTE"
+        },
+        {
+            "County": "FISHER"
+        },
+        {
+            "County": "FLOYD"
+        },
+        {
+            "County": "FOARD"
+        },
+        {
+            "County": "FORT BEND"
+        },
+        {
+            "County": "FRANKLIN"
+        },
+        {
+            "County": "FREESTONE"
+        },
+        {
+            "County": "FRIO"
+        },
+        {
+            "County": "GAINES"
+        },
+        {
+            "County": "GALVESTON"
+        },
+        {
+            "County": "GARZA"
+        },
+        {
+            "County": "GILLESPIE"
+        },
+        {
+            "County": "GLASSCOCK"
+        },
+        {
+            "County": "GOLIAD"
+        },
+        {
+            "County": "GONZALES"
+        },
+        {
+            "County": "GRAY"
+        },
+        {
+            "County": "GRAYSON"
+        },
+        {
+            "County": "GREGG"
+        },
+        {
+            "County": "GRIMES"
+        },
+        {
+            "County": "GUADALUPE"
+        },
+        {
+            "County": "HALE"
+        },
+        {
+            "County": "HALL"
+        },
+        {
+            "County": "HAMILTON"
+        },
+        {
+            "County": "HANSFORD"
+        },
+        {
+            "County": "HARDEMAN"
+        },
+        {
+            "County": "HARDIN"
+        },
+        {
+            "County": "HARRIS"
+        },
+        {
+            "County": "HARRISON"
+        },
+        {
+            "County": "HARTLEY"
+        },
+        {
+            "County": "HASKELL"
+        },
+        {
+            "County": "HAYS"
+        },
+        {
+            "County": "HEMPHILL"
+        },
+        {
+            "County": "HENDERSON"
+        },
+        {
+            "County": "HIDALGO"
+        },
+        {
+            "County": "HILL"
+        },
+        {
+            "County": "HOCKLEY"
+        },
+        {
+            "County": "HOOD"
+        },
+        {
+            "County": "HOPKINS"
+        },
+        {
+            "County": "HOUSTON"
+        },
+        {
+            "County": "HOWARD"
+        },
+        {
+            "County": "HUDSPETH"
+        },
+        {
+            "County": "HUNT"
+        },
+        {
+            "County": "HUTCHINSON"
+        },
+        {
+            "County": "IRION"
+        },
+        {
+            "County": "JACK"
+        },
+        {
+            "County": "JACKSON"
+        },
+        {
+            "County": "JASPER"
+        },
+        {
+            "County": "JEFF DAVIS"
+        },
+        {
+            "County": "JEFFERSON"
+        },
+        {
+            "County": "JIM HOGG"
+        },
+        {
+            "County": "JIM WELLS"
+        },
+        {
+            "County": "JOHNSON"
+        },
+        {
+            "County": "JONES"
+        },
+        {
+            "County": "KARNES"
+        },
+        {
+            "County": "KAUFMAN"
+        },
+        {
+            "County": "KENDALL"
+        },
+        {
+            "County": "KENEDY"
+        },
+        {
+            "County": "KENT"
+        },
+        {
+            "County": "KERR"
+        },
+        {
+            "County": "KIMBLE"
+        },
+        {
+            "County": "KING"
+        },
+        {
+            "County": "KINNEY"
+        },
+        {
+            "County": "KLEBERG"
+        },
+        {
+            "County": "KNOX"
+        },
+        {
+            "County": "LAMAR"
+        },
+        {
+            "County": "LAMB"
+        },
+        {
+            "County": "LAMPASAS"
+        },
+        {
+            "County": "LASALLE"
+        },
+        {
+            "County": "LAVACA"
+        },
+        {
+            "County": "LEE"
+        },
+        {
+            "County": "LEON"
+        },
+        {
+            "County": "LIBERTY"
+        },
+        {
+            "County": "LIMESTONE"
+        },
+        {
+            "County": "LIPSCOMB"
+        },
+        {
+            "County": "LIVE OAK"
+        },
+        {
+            "County": "LLANO"
+        },
+        {
+            "County": "LOVING"
+        },
+        {
+            "County": "LUBBOCK"
+        },
+        {
+            "County": "LYNN"
+        },
+        {
+            "County": "MADISON"
+        },
+        {
+            "County": "MARION"
+        },
+        {
+            "County": "MARTIN"
+        },
+        {
+            "County": "MASON"
+        },
+        {
+            "County": "MATAGORDA"
+        },
+        {
+            "County": "MAVERICK"
+        },
+        {
+            "County": "MCCULLOCH"
+        },
+        {
+            "County": "MCLENNAN"
+        },
+        {
+            "County": "MCMULLEN"
+        },
+        {
+            "County": "MEDINA"
+        },
+        {
+            "County": "MENARD"
+        },
+        {
+            "County": "MIDLAND"
+        },
+        {
+            "County": "MILAM"
+        },
+        {
+            "County": "MILLS"
+        },
+        {
+            "County": "MITCHELL"
+        },
+        {
+            "County": "MONTAGUE"
+        },
+        {
+            "County": "MONTGOMERY"
+        },
+        {
+            "County": "MOORE"
+        },
+        {
+            "County": "MORRIS"
+        },
+        {
+            "County": "MOTLEY"
+        },
+        {
+            "County": "NACOGDOCHES"
+        },
+        {
+            "County": "NAVARRO"
+        },
+        {
+            "County": "NEWTON"
+        },
+        {
+            "County": "NOLAN"
+        },
+        {
+            "County": "NUECES"
+        },
+        {
+            "County": "OCHILTREE"
+        },
+        {
+            "County": "OLDHAM"
+        },
+        {
+            "County": "ORANGE"
+        },
+        {
+            "County": "PALO PINTO"
+        },
+        {
+            "County": "PANOLA"
+        },
+        {
+            "County": "PARKER"
+        },
+        {
+            "County": "PARMER"
+        },
+        {
+            "County": "PECOS"
+        },
+        {
+            "County": "POLK"
+        },
+        {
+            "County": "POTTER"
+        },
+        {
+            "County": "PRESIDIO"
+        },
+        {
+            "County": "RAINS"
+        },
+        {
+            "County": "RANDALL"
+        },
+        {
+            "County": "REAGAN"
+        },
+        {
+            "County": "REAL"
+        },
+        {
+            "County": "RED RIVER"
+        },
+        {
+            "County": "REEVES"
+        },
+        {
+            "County": "REFUGIO"
+        },
+        {
+            "County": "ROBERTS"
+        },
+        {
+            "County": "ROBERTSON"
+        },
+        {
+            "County": "ROCKWALL"
+        },
+        {
+            "County": "RUNNELS"
+        },
+        {
+            "County": "RUSK"
+        },
+        {
+            "County": "SABINE"
+        },
+        {
+            "County": "SAN AUGUSTINE"
+        },
+        {
+            "County": "SAN JACINTO"
+        },
+        {
+            "County": "SAN PATRICIO"
+        },
+        {
+            "County": "SAN SABA"
+        },
+        {
+            "County": "SCHLEICHER"
+        },
+        {
+            "County": "SCURRY"
+        },
+        {
+            "County": "SHACKELFORD"
+        },
+        {
+            "County": "SHELBY"
+        },
+        {
+            "County": "SHERMAN"
+        },
+        {
+            "County": "SMITH"
+        },
+        {
+            "County": "SOMERVELL"
+        },
+        {
+            "County": "STARR"
+        },
+        {
+            "County": "STEPHENS"
+        },
+        {
+            "County": "STERLING"
+        },
+        {
+            "County": "SUTTON"
+        },
+        {
+            "County": "SWISHER"
+        },
+        {
+            "County": "TARRANT"
+        },
+        {
+            "County": "TAYLOR"
+        },
+        {
+            "County": "TERRELL"
+        },
+        {
+            "County": "TERRY"
+        },
+        {
+            "County": "THROCKMORTON"
+        },
+        {
+            "County": "TITUS"
+        },
+        {
+            "County": "TOM GREEN"
+        },
+        {
+            "County": "TRAVIS"
+        },
+        {
+            "County": "TRINITY"
+        },
+        {
+            "County": "TYLER"
+        },
+        {
+            "County": "UPSHUR"
+        },
+        {
+            "County": "UPTON"
+        },
+        {
+            "County": "UVALDE"
+        },
+        {
+            "County": "VAL VERDE"
+        },
+        {
+            "County": "VAN ZANDT"
+        },
+        {
+            "County": "VICTORIA"
+        },
+        {
+            "County": "WALKER"
+        },
+        {
+            "County": "WALLER"
+        },
+        {
+            "County": "WARD"
+        },
+        {
+            "County": "WASHINGTON"
+        },
+        {
+            "County": "WEBB"
+        },
+        {
+            "County": "WHARTON"
+        },
+        {
+            "County": "WHEELER"
+        },
+        {
+            "County": "WICHITA"
+        },
+        {
+            "County": "WILBARGER"
+        },
+        {
+            "County": "WILLACY"
+        },
+        {
+            "County": "WILLIAMSON"
+        },
+        {
+            "County": "WILSON"
+        },
+        {
+            "County": "WINKLER"
+        },
+        {
+            "County": "WISE"
+        },
+        {
+            "County": "WOOD"
+        },
+        {
+            "County": "YOAKUM"
+        },
+        {
+            "County": "YOUNG"
+        },
+        {
+            "County": "ZAPATA"
+        },
+        {
+            "County": "ZAVALA"
+        }
+]

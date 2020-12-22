@@ -1,0 +1,41 @@
+<%-include("partials/header.ejs"); -%>
+<div class="news-intro">
+  <h1 class="news-title">Election News</h1>
+  <br>
+  <h2 class="local">Links to local news sources:</h2>
+  <div class="row local">
+    <div class="col-lg-4">
+      <a class="local-links" href="https://www.texastribune.org/topics/politics/"> <h4 class="local-links"><i class="fas fa-newspaper"></i>Texas Tribune</h4></a>
+      </div>
+      <div class="col-lg-4">
+      <a class="local-links" href="https://www.texasobserver.org/topics/politics/"> <h4 class="local-links"><i class="fas fa-newspaper"></i>Texas Observer</h4></a>
+      </div>
+      <div class="col-lg-4">
+        <a class="local-links" href="https://www.texasmonthly.com/news-politics/"> <h4 class="local-links"><i class="fas fa-newspaper"></i>Texas Monthly</h4></a>
+    </div>
+  </div>
+</div>
+
+<div class="news-content">
+  <h1 class="news-disclaimer">National News articles</h1>
+  <br>
+  <%news.forEach(function(article){%>
+    <div class="row">
+    <div class="col-lg-6 news-img">
+    <a href="<%=article.url%>"><img class="news-url" src="<%=article.urlToImage%>" alt="news link"></a>
+    </div>
+    <div class="col-lg-6">
+
+    <a class="article-link" href="<%=article.url%>"><h3 class="article-info"><%=article.title%></h3></a>
+    <h6 class="article-source"><%=article.source.name%></h6>
+    <h6 class="article-author"><%=article.author%></h6>
+  </div>
+
+  </div>
+</div>
+
+  <%})%>
+
+
+
+<%- include("partials/footer.ejs"); -%>

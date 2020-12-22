@@ -1,0 +1,26 @@
+<%-include("partials/header.ejs"); -%>
+  <body>
+    <div class="county">
+      <div class="county-form">
+
+      <h1 class="county-intro">County Elections</h1>
+      <br>
+      <h3 class="county-filter">Filter by your county here</h3>
+      <br>
+      <form action="/countyelections" method="post">
+        <label for="counties"></label>
+        <select class="county-dropdown" name="counties">
+          <option value=""></option>
+          <% counties.forEach(function(county){ %>
+            <option value="<%=county.County%>"><%= county.County %></option>
+          <%})%>
+        </select>
+        <br>
+        <input class="county-btn btn btn-danger" type="submit" name="submit-county" value="Submit">
+      </form>
+    </div>
+
+    </div>
+
+
+<%- include("partials/footer.ejs"); -%>

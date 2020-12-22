@@ -1,0 +1,58 @@
+<%-include("partials/header.ejs"); -%>
+  <body>
+    <div class="county-filtered-intro">
+    <h1 class="county-selected"><%=type + " COUNTY"%></h1>
+    <h3 class="county-filter">Filter by your county here</h3>
+    <br>
+    <form action="/countyelections" method="post">
+      <label for="counties"></label>
+      <select class="county-dropdown" name="counties">
+        <option value=""></option>
+        <% counties.forEach(function(county){ %>
+          <option value="<%=county.County%>"><%= county.County %></option>
+        <%})%>
+      </select>
+      <br>
+      <input class="county-btn btn btn-danger" type="submit" name="submit-county" value="Submit">
+    </form>
+    <h3 class="official-title">County Election Official</h3>
+    <br>
+    <div class="official">
+      <div class="official-text">
+    <h5 class="election-official">Name: <%=official[0].Name%></h5>
+    <h5 class="election-official">Position: <%=official[0].Postion%></h5>
+    <h5 class="election-official">Mailing Address: <%=official[0]["Mailing Address"]%></h5>
+    <h5 class="election-official">Phone Number: <%=official[0]["Phone "]%></h5>
+    <h5 class="election-official"><a class="election-email" href="<%=official[0]["County Email Addresses"]%>">Email Address</a></h5>
+    <h5 class="election-official"><a class="election-mail" href="https://www.sos.state.tx.us/elections/voter/county.shtml">Submit your mail-in ballot application to your county official here</a></h5>
+  </div>
+  </div>
+
+    </div>
+    <% offices.forEach(function(office){ %>
+      <h1 class="office-names"><%=office["Office Name"]%></h1>
+      <hr class="office-hr">
+      <% const selectedCandidates = candidates.filter(({officeName}) => officeName === office["Office Name"]) %>
+      <% selectedCandidates.forEach(function(candidate){ %>
+        <div class="<%= candidate.party%>">
+        <div class="<%=candidate.party + "-top"%>">
+          <h2 class="name"><%=candidate.candidateName %></h2>
+          </div>
+          <div class="bottom-county">
+          <p>PARTY: <%=candidate.party%></p>
+          <p>OCCUPATION: <%=candidate.occupation%></p>
+          <% if (candidate.email !== "") { %>
+            <p>EMAIL: <%=candidate.email%></p>
+          <%}%>
+          <a target="_blank" class="candidate-link" href="<%="https://www.google.com/search?q=" + candidate.officeName + " " + candidate.candidateName + " TEXAS " + "CANDIDATE"%>" ><i class="fab fa-google"></i> Search</a>
+          <br>
+          <% if (candidate.website) { %>
+            <a target="_blank" class="candidate-link" href="<%=candidate.website%>"><i class="fas fa-link"></i> Available Campaign Site</a>
+            <% } %>
+          </div>
+            <br>
+            </div>
+      <%})%>
+    <%})%>
+
+<%- include("partials/footer.ejs"); -%>

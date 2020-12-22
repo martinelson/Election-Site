@@ -1,0 +1,1197 @@
+body{
+  margin:0;
+  font-family: 'Cinzel', serif;
+}
+
+h1{
+  margin:0;
+}
+
+p{
+  margin: 0;
+}
+
+.main-div{
+  padding: 10% 0;
+}
+
+/* HOME PAGE */
+.bb-div{
+  background-color: rgba(162, 213, 242, .6);
+  display: inline-block;
+  padding: 1%;
+  border-radius: 100%;
+}
+
+.bluebonnet{
+  width: 15vw;
+}
+
+.home-intro{
+  margin: 0;
+  text-align: center;
+  background-color: #384259;
+  color: #fafafa;
+  padding: 10% 0;
+}
+
+.intro{
+  font-size: 6vw;
+  margin-bottom: 2%;
+}
+
+.important-dates{
+  margin-bottom: 7%;
+  font-size: 2vw;
+}
+
+.dates-text{
+  display: inline-block;
+  text-align: left;
+  background-color: rgba(247, 56, 88, .7);
+  padding: 2%;
+  border-radius: 10px;
+  margin: 0 10%;
+}
+
+.link-img{
+  width: 80%;
+}
+
+.rep-row{
+  text-align: center;
+  margin:7% auto 0;
+}
+
+.region{
+  padding: 5% 0 7%;
+  text-align: center;
+  color: #384259;
+}
+
+.region-title{
+  margin: 0 0 5%;
+  font-size: 4vw;
+}
+
+.link-img-title{
+  margin-top: 8%;
+  margin-bottom: 4%;
+  text-shadow: 0 1px 1px #ccc;
+}
+
+
+.link-img:hover{
+  width: 82%;
+
+}
+
+.helpful-links{
+  background-color: #f73859;
+  text-align: center;
+  color: #fafafa;
+  padding: 7% 5%;
+
+}
+
+.helpful-links h5{
+  font-size: 16px;
+}
+
+.h-link{
+  text-decoration: underline;
+  color: inherit;
+}
+
+.h-link:link{
+  text-decoration: underline;
+  color: inherit;
+}
+
+.h-link:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.vit{
+  text-align: center;
+  margin: 2% auto;
+}
+
+.vip-site{
+  text-decoration: underline;
+  color: inherit;
+}
+
+.vip-site:link{
+  text-decoration: underline;
+  color: inherit;
+}
+
+.vip-site:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+
+#election-clock{
+  color: #fafafa;
+}
+
+.navbar{
+  background-color: #384259;
+}
+
+.dropdown-toggle{
+  background-color: #384259;
+  color: #fafafa;
+}
+
+.nav-item{
+  padding-left: 10px;
+}
+
+/* Candidate Info Sections */
+
+.office-names{
+  text-align: center;
+  margin: 2% 5% 0;
+}
+
+.office-hr{
+  width: 40%;
+  margin-bottom: 2%;
+}
+
+.candidate-link{
+  text-decoration: underline;
+  color: black;
+}
+
+.candidate-link:link{
+  text-decoration: underline;
+  color: black;
+}
+
+.candidate-link:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.REPUBLICAN{
+border-radius: 25px;
+position: relative;
+padding: 25px 15px;
+background-color: #ffa5a5;
+height: 260px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+width: 40%;
+margin: 0 auto 5%;
+
+}
+
+.REPUBLICAN-top{
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: #e84a5f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+}
+
+.DEMOCRATIC{
+border-radius: 25px;
+position: relative;
+padding: 25px 15px;
+background-color: #8fbaf3;
+height: 260px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+width: 40%;
+margin: 0 auto 5%;
+}
+
+.DEMOCRATIC-top{
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+}
+
+
+.LIBERTARIAN{
+border-radius: 25px;
+position: relative;
+padding: 25px 15px;
+background-color: #ffe084;
+height: 260px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+width: 40%;
+margin: 0 auto 5%;
+
+}
+
+.LIBERTARIAN-top{
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: #f1c40f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+}
+
+.INDEPENDENT{
+border-radius: 25px;
+position: relative;
+padding: 25px 15px;
+background-color: #c4aff0;
+height: 260px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+width: 40%;
+margin: 0 auto 5%;
+
+}
+
+.INDEPENDENT-top{
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: #481380;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+}
+
+.GREEN{
+border-radius: 25px;
+position: relative;
+padding: 25px 15px;
+background-color: #b0eacd;
+height: 260px;
+box-shadow: 0 2px 5px #ccc;
+text-align: center;
+width: 40%;
+margin: 0 auto 5%;
+
+}
+
+.GREEN-top{
+  border-radius: 25px 25px 0 0;
+  height: 90px;
+  width: 100%;
+  background-color: #21bf73;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #fafafa;
+}
+
+.name{
+  text-align: center;
+  margin: 2% auto 0;
+}
+
+.bottom{
+  margin-top: 7.5vh;
+}
+
+.bottom-county{
+  margin-top: 10vh;
+}
+
+
+
+/* County Filter Page */
+.county-intro{
+  font-size: 4em;
+}
+
+.county{
+  background-color: #384259;
+  color: #fafafa;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+}
+
+.county-form{
+  margin-top: 10%;
+}
+
+.county-dropdown{
+  width: 20%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.county-btn{
+  margin-top: 1%;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #f73859;
+  color: #fafafa;
+  border-color: #f73859;
+}
+
+.btn:hover{
+  background-color: #e84545;
+  border-color: #f73859;
+}
+
+.btn:focus{
+  background-color: #f73859;
+  border-color: #f73859;
+}
+
+
+
+/* county filtered pages */
+.official-title{
+  text-decoration: underline;
+  margin: 5% auto 0;
+  font-size: 2em;
+}
+
+.official{
+  text-align: center;
+}
+
+.election-email{
+  text-decoration: underline;
+}
+.election-email:link{
+  color: inherit;
+}
+
+.election-email:hover{
+  text-decoration: none;
+}
+
+.election-mail{
+  text-decoration: underline;
+  color: #fafafa;
+}
+.election-mail:link{
+  text-decoration: underline;
+  color: #fafafa;
+}
+
+.election-mail:hover{
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.official-text{
+  display: inline-block;
+  text-align: left;
+}
+
+.county-filtered-intro{
+  background-color: #384259;
+  color: #fafafa;
+  text-align: center;
+  padding: 5% 0;
+
+}
+
+.county-selected{
+  font-size: 5em;
+  margin-bottom: 5%;
+}
+
+
+/* federal page */
+
+.federal-dropdown{
+  width: 30%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.federal-filter{
+  margin-top: 5%;
+}
+
+
+
+.filtered-intro{
+  background-color: #384259;
+  color: #fafafa;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.filtered-title{
+  font-size: 4em;
+}
+
+.fec-form{
+  text-align: center;
+}
+
+.fec-btn{
+  margin: 1% 0 0;
+  text-align: center;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f73859;
+  color: #fafafa;
+  border: 2px solid  #f73859;
+}
+
+.fec-btn:hover{
+  border: 3px solid #384259;
+  background-color: #384259;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+
+/* district page */
+
+.district-dropdown{
+  width: 30%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+.district-filter{
+  margin-top: 5%;
+}
+
+
+/* news page */
+.news-intro{
+  background-color: #384259;
+  color: #fafafa;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.news-title{
+  font-size: 120px;
+}
+
+.news-disclaimer{
+  margin: 0 0 5%;
+  text-align: center;
+  font-size: 60px;
+}
+
+.fa-newspaper{
+  padding-right: 5%;
+  font-size: 40px;
+}
+
+.local{
+  margin: 3% 0;
+  font-size: 40px;
+}
+
+.local-links{
+  width: 80%;
+  text-align: center;
+  color: #fafafa;
+  margin: 0 auto 5%;
+  text-decoration: underline;
+  font-size: 40px;
+
+}
+
+.local-links:link{
+  color: #fafafa;
+}
+
+.local-links:hover{
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.news-content{
+  margin-top: 5%;
+}
+
+.news-url{
+  width: 80%;
+  margin:0 0 5% 10%;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.news-url:hover{
+  width: 80.5%;
+  box-shadow: 0 4px 7px #ccc;
+}
+
+.article-info{
+  margin: 15% 7% 0;
+  font-size: 25px;
+}
+
+
+.article-link{
+  text-decoration: underline;
+  color: black;
+}
+.article-link:link{
+  text-decoration: underline;
+  color: black;
+}
+
+.article-link:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.article-source{
+  margin-top: 2%;
+  margin-left: 7%;
+  font-size: 12px;
+}
+
+.article-author {
+  margin-left: 7%;
+  font-size: 12px;
+}
+
+
+/* helpful links page */
+
+.link-info{
+  margin: 5% auto 0;
+  text-align: center;
+}
+
+.links-text{
+  text-align: center;
+  margin: 0 auto 0;
+}
+
+.link-col{
+  margin-bottom: 10%;
+  display: inline-block;
+}
+
+.fa-search{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+.fa-check-square{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+.fa-external-link-square-alt{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+.fa-envelope-open-text{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+.fa-user-check{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+.fa-address-card{
+  padding-right: 5%;
+  font-size: 50px;
+}
+
+
+.links{
+  text-decoration: underline;
+  color: inherit;
+  font-size: 2vw;
+}
+
+.links:link{
+  text-decoration: underline;
+  color: black;
+}
+
+.links:hover{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+/* finance page */
+
+.fec-intro{
+  background-color: #384259;
+  color: #fafafa;
+  text-align: center;
+}
+
+.fec-title{
+  padding: 5% 0 0;
+  font-size: 5em;
+}
+
+.fec-description{
+  padding: 2% 0;
+}
+
+.back{
+  padding-bottom: 5%;
+}
+
+.back-to-fed{
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+
+}
+
+.back-to-fed:link{
+  text-decoration: underline;
+  color: white;
+}
+
+.back-to-fed:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+.row{
+  margin: 0;
+}
+
+.data{
+  margin: 5% 0 0;
+  text-align: center;
+  width: 70%;
+}
+
+.data-text{
+  display: inline-block;
+  text-align: left;
+}
+
+.fec-candidate{
+  text-decoration: underline;
+  margin-bottom: 1%;
+}
+
+.filing{
+  margin-bottom: 20%;
+}
+
+.chart-title{
+  margin-top: 5%;
+  font-size: 25px;
+  text-align: center;
+}
+
+#piechart{
+  width: 700px;
+  height: 400px;
+  text-align: center;
+  margin: 0 auto 0;
+}
+
+
+
+/* 404 */
+
+.not-found{
+  text-align: center;
+  background-color: #384259;
+  color: #fafafa;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.page-not-found{
+  margin-bottom: 2%;
+}
+
+
+/* Disclaimer */
+
+.disclaimer-intro{
+  padding-top: 10%;
+  font-size: 60px;
+}
+
+.disclaimer{
+  background-color: #384259;
+  color: #fafafa;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+}
+
+.disclaimer-p{
+  margin: 0 20%;
+}
+
+
+
+/* footer */
+.footer{
+  background-color: #f73859;
+  padding: 5% 0;
+  text-align: center;
+  color: #fafafa;
+}
+
+.footer-link{
+  text-decoration: underline;
+  color: #fafafa;
+
+}
+
+.footer-link:link{
+  text-decoration: underline;
+  color: #fafafa;
+}
+
+.footer-link:hover{
+  text-decoration: none;
+  color: #fafafa;
+}
+
+
+
+/* responsive */
+
+@media (max-width: 1080px) {
+    .article-info{
+      font-size: 15px;
+    }
+
+    .office-hr{
+      width: 80%;
+    }
+
+    .DEMOCRATIC{
+      width: 90%;
+    }
+
+    .DEMOCRATIC-top{
+      height: 80px;
+    }
+
+    .REPUBLICAN{
+      width: 90%;
+    }
+
+    .REPUBLICAN-top{
+      height: 80px;
+    }
+
+    .LIBERTARIAN{
+      width: 90%;
+    }
+
+    .LIBERTARIAN-top{
+      height: 80px;
+    }
+
+    .INDEPENDENT{
+      width: 90%;
+    }
+
+    .INDEPENDENT-top{
+      height: 80px;
+    }
+
+    .GREEN{
+      width: 90%;
+    }
+
+    .GREEN-top{
+      height: 80px;
+    }
+
+    .federal-dropdown{
+      width: 60%;
+    }
+
+    .district-dropdown{
+      width: 60%;
+    }
+
+    .county-dropdown{
+      width: 60%;
+    }
+
+}
+
+
+@media (max-width: 990px) {
+
+  .links{
+    text-align: left;
+    margin-left: 33%;
+  }
+
+  .article-info{
+    margin: 2% 10% 0;
+    font-size: 15px;
+  }
+
+  .news-img{
+    margin: 0 auto 0;
+    text-align: center;
+  }
+
+  .news-url{
+    text-align: center;
+    margin: 0 auto 0;
+  }
+
+
+  .article-author{
+    margin-bottom: 10%;
+    margin-left: 10%;
+  }
+
+  .article-source{
+    margin-left: 10%;
+  }
+
+  .filtered-title{
+    font-size: 60px;
+  }
+
+  .election-official{
+    font-size: 15px;
+  }
+
+  .fec-description{
+    margin: 0 5%;
+  }
+
+  .fec-title{
+    margin: 0 5%;
+  }
+
+  .data{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 700px) {
+  #piechart{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto 0;
+  }
+
+}
+
+
+
+  @media (max-width: 650px) {
+
+    .links{
+      font-size: 4vw;
+      margin-left: 15%;
+    }
+
+    .news-title{
+      font-size: 40px;
+    }
+
+    .news-disclaimer{
+      font-size: 40px;
+    }
+
+    .local{
+      font-size: 20px;
+    }
+
+    .local-links{
+      font-size: 20px;
+    }
+
+    .office-names{
+      font-size: 25px;
+    }
+
+    .name{
+      font-size: 25px;
+    }
+
+    .official-title{
+      font-size: 20px;
+      margin: 5% 5% 0;
+    }
+
+    .election-official{
+      margin: 0 5% 5%;
+    }
+    .fec-description{
+      font-size: 20px;
+    }
+
+    .fec-title{
+      font-size: 40px;
+    }
+
+    .back{
+      font-size: 20px;
+      margin: 0 5%:
+    }
+
+  }
+
+@media (max-width: 500px){
+  .email{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .region-title{
+    font-size: 7vw;
+  }
+
+  .intro{
+    font-size: 7vw;
+  }
+
+  .helpful-links{
+    text-align: left;
+    padding-left: 10%;
+  }
+
+  .links{
+    font-size: 3.5vw;
+    margin-left: 10%;
+  }
+
+  .filtered-title{
+    font-size: 40px;
+  }
+
+  .office-names{
+    font-size: 18px;
+  }
+
+  .name{
+    font-size: 18px;
+    padding-top: 5%;
+  }
+
+  .bottom{
+    font-size: 11px;
+    margin-top: 8vh;
+  }
+
+  .bottom-county{
+    font-size: 11px;
+    margin-top: 10vh;
+  }
+
+  .federal-dropdown{
+    width: 80%;
+  }
+
+  .district-dropdown{
+    width: 80%;
+  }
+
+  .county-dropdown{
+    width: 80%;
+  }
+
+  .county-btn{
+    width: 50%;
+  }
+
+  .county-filter{
+    font-size: 20px;
+  }
+
+  .county-selected{
+    font-size: 50px;
+    margin: 0 5%;
+  }
+
+  #piechart{
+    width: 340px;
+    height: 400px;
+    text-align: center;
+    margin: 0 2% auto 0;
+  }
+
+  .fec-candidate{
+    font-size: 20px;
+  }
+
+  .fec-detail{
+    font-size: 15px;
+  }
+  .data-text{
+    font-size: 15px;
+  }
+
+  .important-dates{
+    font-size: 12px;
+  }
+  .disclaimer-intro{
+    font-size: 40px;
+  }
+
+  .disclaimer-p{
+    text-align: left;
+  }
+
+
+}
+
+@media (max-width: 380px) {
+  .email{
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 330px) {
+
+  .news-title{
+    font-size: 25px;
+  }
+
+  .news-disclaimer{
+    font-size: 25px;
+  }
+
+  .local{
+    font-size: 15px;
+  }
+
+  .local-links{
+    font-size: 15px;
+  }
+
+  .county-intro{
+    font-size: 40px;
+  }
+
+  .bottom{
+    font-size: 10px;
+    margin-top: 8vh;
+  }
+
+  .bottom-county{
+    font-size: 10px;
+    margin-top: 11vh;
+  }
+
+  #piechart{
+    width: 310px;
+    height: 400px;
+    text-align: center;
+    margin: 0 2% auto 0;
+  }
+}
+
+@media (max-width: 281px){
+  #piechart{
+    display: none;
+  }
+
+  .chart-title{
+    display: none;
+  }
+}
+
+@media (max-width: 279px){
+  .fa-search{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+  .fa-check-square{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+  .fa-external-link-square-alt{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+  .fa-envelope-open-text{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+  .fa-user-check{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+
+  .fa-address-card{
+    padding-right: 5%;
+    font-size: 30px;
+  }
+  .fa-newspaper{
+    font-size: 30px;
+  }
+
+  .bottom{
+    margin-top: 12vh;
+  }
+
+  .bottom-county{
+    margin-top: 18vh;
+  }
+
+  .filtered-title{
+    font-size: 30px;
+  }
+
+  .email{
+    font-size: 8px;
+  }
+
+  .county-intro{
+    font-size: 20px;
+  }
+
+  .county-filter{
+    font-size: 13px;
+  }
+
+}

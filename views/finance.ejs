@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TX 2020</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<nav id="top" class="navbar navbar-expand-lg navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Candidates
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <a href="/federal"><button class="dropdown-item" type="button">Federal</button></a>
+            <a href="/statewide"><button class="dropdown-item" type="button">State</button></a>
+            <a href="/county"><button class="dropdown-item" type="button">County</button></a>
+            <a href="/district"><button class="dropdown-item" type="button">District</button></a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/links">Helpful Links</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/news">In The News</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+  <div class="fec-intro">
+    <h1 class="fec-title">Financial Data</h1>
+    <h3 class="fec-description">Data is taken from fec.gov's latest filing from candidates.</h3>
+    <a class="back-to-fed" href="/federal"><h3 class="back">Back to Federal Candidates</h3></a>
+  </div>
+  <div class="row data-row">
+    <div class="col-lg-12 chart">
+      <h1 class="chart-title">Comparison by Cash Disbursements</h1>
+      <div id="piechart"></div>
+
+    </div>
+    <div class="col-lg-12 data">
+      <div class="data-text">
+
+      <% var l = [['Candidate', 'Total Disbursements']] %>
+      <% candidates.forEach(function(candidate) { %>
+        <% fecCandidates.forEach(function(fec_candidate) { %>
+          <% var fec_split = fec_candidate.name.split(","); %>
+          <% var candidate_split = candidate.lastName; %>
+
+          <% if (fec_split[0] === candidate_split) { %>
+            <% var li = [candidate.lastName, fec_candidate.disbursements, fec_candidate.party] %>
+            <% l.push(li) %>
+            <h1 class="fec-candidate"><%= candidate.candidateName %></h1>
+
+            <% if(fec_candidate.receipts === 0) { %>
+              <h5 class="fec-detail">Receipts: None</h5>
+            <%} else { %>
+              <h5 class="fec-detail">Receipts: <%= fec_candidate.receipts.toLocaleString() %></h5>
+            <%}%>
+
+            <% if(fec_candidate.debts_owed_by_committee === 0) { %>
+              <h5 class="fec-detail">Debt Owed: None</h5>
+            <%} else { %>
+              <h5 class="fec-detail">Debt Owed: <%= fec_candidate.debts_owed_by_committee.toLocaleString() %></h5>
+            <%}%>
+
+            <% if(fec_candidate.disbursements === 0) { %>
+              <h5 class="fec-detail">Disbursements: None</h5>
+            <%} else { %>
+              <h5 class="fec-detail">Disbursements: <%= fec_candidate.disbursements.toLocaleString() %></h5>
+            <%}%>
+
+            <% if(fec_candidate.cash_on_hand_end_period === 0) {%>
+              <h5 class="fec-detail">Cash On Hand: None</h5>
+            <%} else { %>
+              <h5 class="fec-detail">Cash On Hand: <%= fec_candidate.cash_on_hand_end_period.toLocaleString() %> </h5>
+            <%}%>
+
+          <h5 class="filing fec-detail">Last Filing Date: <%=fec_candidate.last_file_date%></h5>
+        <%}%>
+      <%})%>
+      <%})%>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages': ['corechart']
+      });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+        <% var listLength = l.length %>
+        <% i = 0 %>
+        <%l.forEach(function(li){%>
+          <% if (i === 0 ){%>
+            ['<%=li[0]%>', '<%=li[1]%>'],
+          <%} else if (i < listLength - 1) { %>
+            ['<%=li[0]%>', <%=li[1]%>],
+          <%} else {%>
+            ['<%=li[0]%>', <%=li[1]%>]
+          <%}%>
+        <% i += 1 %>
+        <%})%>
+      ]);
+
+      <% colors = [] %>
+      <%l.forEach(function(li) { %>
+        <% if (li[2] === 'DEM') { %>
+          <% colors.push('#3498db')%>
+        <%} else if (li[2] === 'REP') { %>
+          <% colors.push('#e84a5f') %>
+        <%} else if (li[2] === 'LIB') { %>
+          <% colors.push('#f1c40f') %>
+        <%} else if (li[2] === 'IND') { %>
+          <% colors.push('#481380') %>
+        <%} else if(li[2] !== undefined){%>
+          <% colors.push('#d3d6db') %>
+        <%}%>
+      <%})%>
+
+
+      <% var i = 0 %>
+        var options = {
+
+          // title: 'Campaign Disbursements',
+          colors: [<%colors.forEach(function(color){ %>
+
+            <% if (i < listLength) {%>
+              '<%=color%>',
+            <%} else {%>
+              '<%=color%>'
+              <%}%>
+            <%i += 1%>
+            <%})%>]
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </div>
+
+
+  <%- include("partials/footer.ejs"); -%>

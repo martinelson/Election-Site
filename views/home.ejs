@@ -1,0 +1,61 @@
+<%-include("partials/header.ejs"); -%>
+  <body>
+    <div class="home-intro">
+      <h1 class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Texan <div class="bb-div">
+        <img class="bluebonnet" src="images/webpgimages/bluebonnet.png" alt="blue bonnet">
+      </div> Election</h1>
+      <h1 class="intro">- 2020 -</h1>
+      <div class="dates-text">
+
+      <h3 class="important-dates">Voting Registration Deadline: <u>October 5, 2020</u></h3>
+      <h3 class="important-dates">Early Voting Period: <u>October 13-30, 2020</u></h3>
+      <h3 class="important-dates">Mail-in Ballot Deadline: <u>October 23, 2020</u></h3>
+      <h3 class="important-dates">Election Day: <u>November 3, 2020</u></h3>
+    </div>
+
+    </div>
+    <div class="region">
+      <h1 class="region-title">Find Candidates by Representative Region</h1>
+
+      <div class="row rep-row">
+        <div class="col-lg-3 link-title">
+          <h2 class="link-img-title">Federal</h2>
+          <a href="/federal"><img class="link-img" src="images/webpgimages/federal.png" alt="Federal Elections"></a>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="link-img-title">State</h2>
+        <a href="/statewide"><img class="link-img" src="images/webpgimages/state.png" alt="State Elections"></a>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="link-img-title">County</h2>
+        <a href="/county"><img class="link-img" src="images/webpgimages/county.png" alt="County Elections"></a>
+        </div>
+        <div class="col-lg-3">
+          <h2 class="link-img-title">District</h2>
+          <a href="/district"><img class="link-img" src="images/webpgimages/district.png" alt="District Elections"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="helpful-links">
+      <br>
+      <h4>There are over 3,000 Texan candidates in 2020. But you don't need to know them all.</h4>
+      <br>
+      <h5>Click here for <a class="h-link" href="/links">helpful links</a> about voting, volunteering, and validating your representative jurisdictions.</h5>
+      <br>
+      <br>
+
+      <h5>Use the Voting Information Tool from <a class="vip-site" href="https://www.votinginfoproject.org/" target="_blank">Voting Info Project</a> to confirm polling locations and early voting sites <br><br />(info typically available 3 weeks prior to election day).</h5>
+      <script type="text/javascript" src="https://tool.votinginfoproject.org/app.js"></script>
+      <div id="_vit" class="vit"></div> <script type="text/javascript">vit.load({
+        modal: true,
+        title: 'Voting Information Tool',
+        width: '640px', height: '480px',
+        colors: { 'header': '#229acd', 'landscapeBackgroundHeader': '#228a9d' },
+        language: 'en'
+        });</script>
+
+    </div>
+
+
+<%- include("partials/footer.ejs"); -%>

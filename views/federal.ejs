@@ -1,0 +1,54 @@
+<%-include("partials/header.ejs"); -%>
+  <body>
+    <div class="filtered-intro">
+      <h1 class="filtered-title">Federal Level Candidates</h1>
+      <h3 class="federal-filter">Filter by your Federal Offices here</h3>
+      <br>
+      <form action="/federaloffice" method="post">
+        <label for="federal"></label>
+        <select name="federal" class="federal-dropdown">
+          <option value=""></option>
+          <% completeOffices.forEach(function(office){ %>
+            <option value="<%=office.Office%>"><%= office.Office %></option>
+          <%})%>
+        </select>
+        <br>
+        <input class="county-btn btn btn-danger" type="submit" name="submit-federal" value="Submit">
+      </form>
+    </div>
+
+    <% offices.forEach(function(office){ %>
+
+        <h1 class="office-names"><%=office.Office%></h1>
+        <form class="fec-form" action="/finance" method="post">
+      <button class="fec-btn" type="submit" name="seatName" value="<%=office.Office%>">Finance Data</button></form>
+        <hr class="office-hr">
+
+          <% candidates.forEach(function(candidate){ %>
+
+            <% if (candidate.officeName === office.Office) { %>
+              <div class="<%= candidate.party%>">
+                <div class="<%=candidate.party + "-top"%>">
+                <h2 class="name"><%=candidate.candidateName %></h2>
+                </div>
+                <br>
+                <div class="bottom">
+                <p>PARTY: <%=candidate.party%></p>
+                <p>OCCUPATION: <%=candidate.occupation%></p>
+                <% if (candidate.email !== "") { %>
+                  <p class="email">EMAIL: <%=candidate.email%></p>
+                <%}%>
+                <a target="_blank" class="candidate-link" href="<%="https://www.google.com/search?q=" + candidate.officeName + " " + candidate.candidateName + " TEXAS " + "CANDIDATE"%>" ><i class="fab fa-google"></i> Search</a>
+                <br>
+                <% if (candidate.website) { %>
+                  <a target="_blank" class="candidate-link" href="<%=candidate.website%>"><i class="fas fa-link"></i> Available Campaign Site</a>
+                  <% } %>
+
+              </div>
+                  <br>
+                </div>
+                  <% } %>
+            <%})%>
+          <%})%>
+
+<%- include("partials/footer.ejs"); -%>

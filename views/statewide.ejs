@@ -1,0 +1,42 @@
+<%-include("partials/header.ejs"); -%>
+  <body>
+    <div class="filtered-intro">
+    <h1 class="filtered-title">State Level Candidates</h1>
+    </div>
+
+    <% offices.forEach(function(office){ %>
+
+        <h1 class="office-names"><%=office["Office Name"]%></h1>
+        <hr class="office-hr">
+
+
+
+          <% candidates.forEach(function(candidate){ %>
+
+            <% if (candidate.officeName === office["Office Name"]) { %>
+              <div class="<%= candidate.party%>">
+                <div class="<%=candidate.party + "-top"%>">
+                <h2 class="name"><%=candidate.candidateName %></h2>
+                </div>
+                <br>
+                <div class="bottom">
+
+                <p>PARTY: <%=candidate.party%></p>
+                <p>OCCUPATION: <%=candidate.occupation%></p>
+                <% if (candidate.email !== "") { %>
+                  <p>EMAIL: <%=candidate.email%></p>
+                <%}%>
+                <a target="_blank" class="candidate-link" href="<%="https://www.google.com/search?q=" + candidate.officeName + " " + candidate.candidateName + " TEXAS " + "CANDIDATE"%>" ><i class="fab fa-google"></i> Search</a>
+                <br>
+                <% if (candidate.website) { %>
+                  <a target="_blank" class="candidate-link" href="<%=candidate.website%>"><i class="fas fa-link"></i> Available Campaign Site</a>
+                  <% } %>
+              </div>
+                  <br>
+                </div>
+                  <% } %>
+            <%})%>
+          <%})%>
+
+
+<%- include("partials/footer.ejs"); -%>
