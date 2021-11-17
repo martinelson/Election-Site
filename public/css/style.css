@@ -315,11 +315,11 @@ margin: 0 auto 5%;
 }
 
 .bottom{
-  margin-top: 7.5vh;
+  margin-top: 4rem;
 }
 
 .bottom-county{
-  margin-top: 10vh;
+  margin-top: 5rem;
 }
 
 
@@ -969,7 +969,7 @@ margin: 0 auto 5%;
 
     .back{
       font-size: 20px;
-      margin: 0 5%:
+      margin: 0 5%;
     }
 
   }
@@ -1015,12 +1015,12 @@ margin: 0 auto 5%;
 
   .bottom{
     font-size: 11px;
-    margin-top: 8vh;
+    margin-top: 5rem;
   }
 
   .bottom-county{
     font-size: 11px;
-    margin-top: 10vh;
+    margin-top: 5rem;
   }
 
   .federal-dropdown{
@@ -1110,12 +1110,10 @@ margin: 0 auto 5%;
 
   .bottom{
     font-size: 10px;
-    margin-top: 8vh;
   }
 
   .bottom-county{
     font-size: 10px;
-    margin-top: 11vh;
   }
 
   #piechart{
@@ -1168,14 +1166,6 @@ margin: 0 auto 5%;
   }
   .fa-newspaper{
     font-size: 30px;
-  }
-
-  .bottom{
-    margin-top: 12vh;
-  }
-
-  .bottom-county{
-    margin-top: 18vh;
   }
 
   .filtered-title{
